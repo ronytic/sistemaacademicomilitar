@@ -1,3 +1,6 @@
+<?php
+extract($_GET);
+?>
 <html>
 <head>
 <title>Sistema Integrado Academico - EMTE</title>
@@ -48,7 +51,7 @@
           <p><font size="2" face="Arial, Helvetica, sans-serif"><strong><font size="2" face="Arial, Helvetica, sans-serif">
             <?php 
 
-$link = mysql_connect("localhost", "root","nea1178");
+$link = mysql_connect("localhost", "root","");
 mysql_select_db("emte",$link);
 $result = mysql_query("SELECT * FROM alumno WHERE ci=$ide", $link);
 $row = mysql_fetch_array($result);

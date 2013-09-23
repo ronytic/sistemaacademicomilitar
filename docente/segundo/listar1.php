@@ -51,7 +51,7 @@
         <?php 
 $sum = 0;
 $id_materia = $id_materia; 
-$link = mysql_connect("localhost", "root", "nea1178");
+$link = mysql_connect("localhost", "root", "");
 mysql_select_db("emte", $link);
 $result = mysql_query("SELECT * FROM alumno WHERE espe = '1ER. A.M.' ORDER BY paterno", $link);
 if ($row = mysql_fetch_array($result)){

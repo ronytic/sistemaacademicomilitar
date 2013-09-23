@@ -3,7 +3,7 @@ class auth{
 	
 	var $HOST = "localhost";	
 	var $USERNAME = "root";	
-	var $PASSWORD = "nea1178";	
+	var $PASSWORD = "";	
 	var $DBNAME = "emte";	
 
 	

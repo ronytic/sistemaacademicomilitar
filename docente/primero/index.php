@@ -67,7 +67,7 @@
                 <td width="30%" valign="middle"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
                   <?php 
 																							$gestion = date("Y");
-																							@$conexion = mysql_connect ("localhost","root","nea1178");
+																							@$conexion = mysql_connect ("localhost","root","");
 																							mysql_select_db("emte",$conexion);
 																							$consulta = mysql_query("SELECT DISTINCTROW id_materia FROM materia WHERE curso = 'PRIMERO' ORDER BY id_materia ASC"); 
 																							echo '<select name="id_materia" id="id_materia">';

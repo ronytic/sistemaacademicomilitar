@@ -1,3 +1,4 @@
+<?php $id_materia=$_POST['id_materia'];?>
 <html>
 <head>
 <title>Sistema Integrado Academico - EMTE</title>
@@ -51,7 +52,7 @@
         <?php 
 $sum = 0;
 $id_materia = $id_materia; 
-$link = mysql_connect("localhost", "root", "nea1178");
+$link = mysql_connect("localhost", "root", "");
 mysql_select_db("emte", $link);
 $result = mysql_query("SELECT * FROM alumno WHERE espe = '1ER. A.M.' ORDER BY paterno", $link);
 if ($row = mysql_fetch_array($result)){
@@ -82,7 +83,7 @@ $sql = mysql_query("SELECT * FROM primero WHERE (ci='$cedula' AND id_materia='$i
 $existe = mysql_num_rows;
 if($existe <> "0")
 {
-echo "<td align='center'><a href=\"update1.php?ide=$ide\">Evaluar</a></td>\n";
+echo "<td align='center'><a href=\"update1.php?ide=$ide&id_materia=$id_materia\">Evaluar</a></td>\n";
 echo "</tr> \n";
 }
 else

@@ -16,7 +16,7 @@ $logout = "http://" . $_SERVER['HTTP_HOST'] . "/logout.php";
 
 $dbhost = "localhost";	
 $dbusername = "root"; 	
-$dbpass = "nea1178";	
+$dbpass = "";	
 $dbname	= "emte"; 	
 
 ?>
